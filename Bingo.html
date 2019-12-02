@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Bingo</title>
+    <style>
+    .coloor{
+        background-color:#2c0434;
+    }
+    .coloorpag{
+        background-color:#2995c6;
+    }
+    .imagenfondo{
+        
+        background-image: url("./fondo.PNG");
+        
+    }
+    .blanco{
+        background-color: white;
+       
+    }
+    .plata{
+        background-color: #C0C0C0;
+        border-radius: 5px;
+        
+    }
+    .barrita{
+        padding:0% !important;
+    }
+    .invisible {
+    visibility: hidden;
+    }
+    .quitarestilo{
+        list-style: none;
+    }
+    .h1{
+        font-size: 60px;
+        color:white;
+        font-family: sans-serif;
+    }
+    .h2{
+        font-size: 30px;
+        color:white;
+    }
+    .h3{
+        font-size: 12px;
+        color:white;
+    }
+    .buttoncolor{
+        background-color:#2995c6 ;
+    }
+    </style>
+
+
+</head>
+
+<body>
+    <script>     
+        function bingo(){
+            var y=document.getElementById("puntosd").innerHTML =parseInt(document.getElementById("puntosd").innerHTML)+50;
+        }
+
+        function rellenar(id){
+            document.getElementById(id).style.backgroundImage = "url(./fondo.PNG)";
+            
+
+        }
+        function bingo1(){
+            var x=document.getElementById("cont1").innerHTML =parseInt(document.getElementById("cont1").innerHTML)+1;
+
+            
+            if(document.getElementById("cont1").innerHTML=="15"){
+                alert("BINGO!!");
+                bingo();
+            }
+        }
+        function bingo2(){
+            var x=document.getElementById("cont2").innerHTML =parseInt(document.getElementById("cont2").innerHTML)+1;
+
+            
+            if(document.getElementById("cont2").innerHTML=="15"){
+                alert("BINGO!!");
+                bingo();
+            }
+        }
+        function bingo3(){
+            var x=document.getElementById("cont3").innerHTML =parseInt(document.getElementById("cont3").innerHTML)+1;
+
+            
+            if(document.getElementById("cont3").innerHTML=="15"){
+                alert("BINGO!!");
+                bingo();
+            }
+        }
+        function bingo4(){
+            var x=document.getElementById("cont4").innerHTML =parseInt(document.getElementById("cont4").innerHTML)+1;
+
+            
+            if(document.getElementById("cont4").innerHTML=="15"){
+                alert("BINGO!!");
+                bingo();
+               
+            }
+        }
+    </script>
+
+
+    <div class="container-fluid coloorpag">
+        <div class="row coloor py-1 ">
+            <div class="col-md-2 col-4 ">
+                <img  class="img " src="./bingofoto.PNG">
+            </div>
+            <div class="col-md-10 col-8 text-center float-center pt-5 ">
+
+                <div class="row">
+                    <div class="col-md-12 d-none d-md-block text-center">
+                        <h1 class="h1">Bingo</h1>
+                    </div>
+                    <div class="col-md-12 d-md-none offset-2 text-center">
+                        <h1 class="h1 mt-4">Bingo</h1>
+                    </div>
+                    
+                </div>
+                <div class="row d-none d-md-block ">
+                    <div class="col-12 offset-2 text-center">
+                            <nav class="navbar navbar-inverse ml-5 text-center" role="navigation">
+                                <ul class="navbar navbar-expand-sm quitarestilo text-center">                                               
+                                    <li class="nav-item pb-2 mr-5">
+                                        <a class="h2" data-toggle="modal" data-target="#myModal" href="">Premios</a>
+                                    </li>
+                                    <li class="nav-item pb-2 mr-5">
+                                        <a class="h2" data-toggle="modal" data-target="#myModal2" href="">Información</a>
+                                    </li>
+                                    <li class="nav-item pb-2 mr-5">
+                                        <a class="h2" data-toggle="modal" data-target="#myModal3" href="">Zona de Casino</a>
+                                    </li>                      
+                                </ul>
+                            </nav>
+                    </div>
+                </div>
+                
+               
+               
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-12 d-block d-md-none coloor">
+                <nav class="navbar text-center ">
+
+                    <p class="h2 text-center">Jugador: PEDRO </p>
+                    <p class="h2 text-center">Creditos: <span id="puntos" >100</span> </p>
+         
+                </nav>
+            </div>
+
+        </div>
+        <div class="row ">
+
+            <div class="col-12 d-md-none barrita ">
+                    <nav class="navbar navbar-expand-md navbar-dark text-center coloor">
+                            
+                          
+                            <!-- Toggler/collapsibe Button -->
+                            <button class="navbar-toggler coloor" type="button " data-toggle="collapse" data-target="#collapsibleNavbar">
+                              <span class="navbar-toggler-icon coloor"></span>
+                            </button>
+                          
+                            <!-- Navbar links -->
+                            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                              <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="h2" data-toggle="modal" data-target="#myModal" href="">Premios</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="h2" data-toggle="modal" data-target="#myModal2" href="">Información</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="h2" data-toggle="modal" data-target="#myModal3" href="">Zona de Casino</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </nav>
+            </div>
+            
+
+        </div>
+
+        <div class="row">
+            <div class="col-2 coloor d-none d-md-block">
+                <nav class="navbar text-center mt-5">
+
+                    <p class="h2 text-center">Jugador: PEDRO </p>
+                    <p class="h2 text-center">Creditos: <span id="puntosd" >100</span> </p>
+         
+                </nav>
+        
+
+            </div>
+            <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                  
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title"></h4>
+                        </div>
+                        <div class="modal-body ">
+                          <h3>Premios:</h3>
+
+                          <p>Bingo: 50 creditos</p>
+                        </div>
+      
+                      </div>
+                  
+                    </div>
+            </div>
+            <div id="myModal2" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                  
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title"></h4>
+                        </div>
+                        <div class="modal-body">
+                          <h3>Información</h3>
+                          <p>Disfruta de tu tiempo libre jugando al Bingo online , millones de usuarios ya usan esta web para jugar al bingo y ganar miles de premios todos los dias , por favor sed honrados y no le deis al boton de bingo si realmente no habeis hecho un bingo, atentamente el mejor bingo de España</p>
+                        </div>
+      
+                      </div>
+                  
+                    </div>
+            </div>
+            <div id="myModal3" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                  
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title"></h4>
+                        </div>
+                        <div class="modal-body">
+                            <h3>Zona casino</h3>
+                          <p>Esta seccion aun esta en construccion</p>
+                        </div>
+      
+                      </div>
+                  
+                    </div>
+            </div>
+            <div class="col-md-10 col-12">
+                <div class="row mt-5  ">
+                    <div class="col-12 col-md-5 plata mx-0 mx-lg-5">
+                        <div class="row ">
+                            <div id="id11" onclick="rellenar(id);bingo1()" class="col-1 borde py-1 px-4 mt-2 ml-2 blanco text-center ">
+                                <p >1</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4 mt-2 imagenfondo ">
+                                
+                            </div>
+                            <div class="col-1 borde py-1 px-4 mt-2 imagenfondo" >
+                                
+                            </div>
+                            <div class="col-1 borde py-1 px-4 mt-2 imagenfondo">
+                                
+                            </div>
+                            <div id="id21" onclick="rellenar(id);bingo1();" class="col-1 borde py-1 px-4 mt-2 blanco">
+                                <p >43</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4 mt-2 imagenfondo">
+                                
+                            </div>
+                            <div id="id31" onclick="rellenar(id);bingo1();" class="col-1 borde py-1 px-4 mt-2 blanco">
+                                <p >64</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4 mt-2 imagenfondo">
+                                
+                            </div>
+                            <div id="id41" onclick="rellenar(id);bingo1();" class="col-1 borde py-1 px-4 mt-2 blanco">
+                                <p >82</p>
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="col-1 borde py-1 px-4  ml-2 imagenfondo">
+                                
+                            </div>
+                            <div id="id51" onclick="rellenar(id);bingo1();" class="col-1 borde py-1 px-4 blanco">
+                                <p >12</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4 imagenfondo" >
+                               
+                            </div>
+                            <div id="id61" onclick="rellenar(id);bingo1();" class="col-1 borde py-1 px-4 blanco">
+                                <p >32</p>
+                            </div>
+                            <div id="id71" onclick="rellenar(id);bingo1();" class="col-1 borde py-1 px-4 blanco">
+                                <p >49</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4 imagenfondo">
+                                
+                            </div>
+                            <div id="id81" onclick="rellenar(id);bingo1();" class="col-1 borde py-1 px-4 blanco">
+                                <p >65</p>
+                            </div>
+                            <div id="id91" onclick="rellenar(id);bingo1();" class="col-1 borde py-1 px-4 blanco">
+                                <p >71</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4 imagenfondo">
+                               
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="i101" onclick="rellenar(id);bingo1();" class="col-1 borde py-1 px-4  ml-2 mb-2 blanco">
+                                <p >8</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4 mb-2 imagenfondo">
+                                
+                            </div>
+                            <div id="i111" onclick="rellenar(id);bingo1();" class="col-1 borde py-1 px-4 mb-2 blanco" >
+                                <p >27</p>
+                            </div>
+                            <div id="i151" onclick="rellenar(id);bingo1();" class="col-1 borde py-1 px-4 mb-2 blanco">
+                                <p >36</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4 mb-2 imagenfondo">
+                                
+                            </div>
+                            <div id="i121" onclick="rellenar(id);bingo1();" class="col-1 borde py-1 px-4 mb-2 blanco">
+                                <p >58</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4 mb-2 imagenfondo">
+                                
+                            </div>
+                            <div id="i131" onclick="rellenar(id);bingo1();" class="col-1 borde py-1 px-4 mb-2 blanco">
+                                <p >78</p>
+                            </div>
+                            <div id="i141" onclick="rellenar(id);bingo1();" class="col-1 borde py-1 px-4 mb-2 blanco">
+                                <p >87</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-5 plata mx-0 mx-lg-3">
+                        <div class="row">
+                            <div class="col-1 borde py-1 px-4 mt-2 ml-2 blanco imagenfondo  ">
+                                
+                            </div>
+                            <div id="id12" onclick="rellenar(id);bingo2();" class="col-1 borde py-1 px-4 mt-2 blanco">
+                                <p >16</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4 mt-2 imagenfondo" >
+                                
+                            </div>
+                            <div id="id22" onclick="rellenar(id);bingo2();" class="col-1 borde py-1 px-4 mt-2 blanco">
+                                <p >33</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4 mt-2  imagenfondo">
+                                
+                            </div>
+                            <div id="id32" onclick="rellenar(id);bingo2();" class="col-1 borde py-1 px-4 mt-2 blanco">
+                                <p >54</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4 mt-2  imagenfondo">
+                                
+                            </div>
+                            <div id="id42" onclick="rellenar(id);bingo2();" class="col-1 borde py-1 px-4 mt-2 blanco">
+                                <p >72</p>
+                            </div>
+                            <div  class="col-1 borde py-1 px-4 mt-2 imagenfondo">
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+                            <div id="id52" onclick="rellenar(id);bingo2();" class="col-1 borde py-1 px-4  ml-2 blanco">
+                                <p >2</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4  imagenfondo">
+                                
+                            </div>
+                            <div id="id62" onclick="rellenar(id);bingo2();" class="col-1 borde py-1 px-4 blanco" >
+                                <p>25</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4 imagenfondo">
+                                
+                            </div>
+                            <div id="id72" onclick="rellenar(id);bingo2();" class="col-1 borde py-1 px-4 blanco">
+                                <p>49</p>
+                            </div>
+                            <div id="id82" onclick="rellenar(id);bingo2();" class="col-1 borde py-1 px-4 blanco">
+                                <p>55</p>
+                            </div>
+                            <div id="id92" onclick="rellenar(id);bingo2();" class="col-1 borde py-1 px-4 blanco ">
+                                <p>65</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4 imagenfondo ">
+                               
+                            </div>
+                            <div class="col-1 borde py-1 px-4 imagenfondo">
+                               
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="i102" onclick="rellenar(id);bingo2();" class="col-1 borde py-1 px-4  ml-2 mb-2 blanco">
+                                <p>8</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4 mb-2 imagenfondo">
+                                
+                            </div>
+                            <div id="i112" onclick="rellenar(id);bingo2();" class="col-1 borde py-1 px-4 mb-2 blanco" >
+                                <p>27</p>
+                            </div>
+                            <div id="i122" onclick="rellenar(id);bingo2();" class="col-1 borde py-1 px-4 mb-2 blanco">
+                                <p>36</p>
+                            </div>
+                            <div onclick="rellenar(id);" class="col-1 borde py-1 px-4 mb-2 imagenfondo">
+                               
+                            </div>
+                            <div id="i132" onclick="rellenar(id);bingo2();" class="col-1 borde py-1 px-4 mb-2 blanco">
+                                <p>58</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4 mb-2 imagenfondo">
+                               
+                            </div>
+                            <div id="i142" onclick="rellenar(id);bingo2();" class="col-1 borde py-1 px-4 mb-2 blanco">
+                                <p>78</p>
+                            </div>
+                            <div id="i152" onclick="rellenar(id);bingo2();" class="col-1 borde py-1 px-4 mb-2 blanco">
+                                <p>87</p>
+                            </div>
+                        </div>
+
+                    </div>
+                   
+                </div>
+                <div class="row mt-lg-5 mt-0">
+                    <div class="col-12 col-md-5 plata mx-0 mx-lg-5">
+                        <div class="row ">
+                            <div class="col-1 borde py-1 px-4 mt-2 ml-2 blanco imagenfondo  ">
+                                
+                            </div>
+                            <div id="id13" onclick="rellenar(id);bingo3();" class="col-1 borde py-1 px-4 mt-2 blanco">
+                                <p>12</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4 mt-2 imagenfondo" >
+                                
+                            </div>
+                            <div id="id23" onclick="rellenar(id);bingo3();" class="col-1 borde py-1 px-4 mt-2 blanco">
+                                <p>33</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4 mt-2  imagenfondo">
+                                
+                            </div>
+                            <div  id="id33" onclick="rellenar(id);bingo3();" class="col-1 borde py-1 px-4 mt-2 blanco">
+                                <p>52</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4 mt-2  imagenfondo">
+                                
+                            </div>
+                            <div id="id43" onclick="rellenar(id);bingo3();" class="col-1 borde py-1 px-4 mt-2 blanco">
+                                <p >70</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4 mt-2 imagenfondo">
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+                            <div id="id53" onclick="rellenar(id);bingo3();" class="col-1 borde py-1 px-4  ml-2 blanco">
+                                <p >6</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4  imagenfondo">
+                                
+                            </div>
+                            <div id="id63" onclick="rellenar(id);bingo3();" class="col-1 borde py-1 px-4 blanco" >
+                                <p >24</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4 imagenfondo">
+                                
+                            </div>
+                            <div id="id73" onclick="rellenar(id);bingo3();" class="col-1 borde py-1 px-4 blanco">
+                                <p >48</p>
+                            </div>
+                            <div id="id83" onclick="rellenar(id);bingo3();" class="col-1 borde py-1 px-4 blanco">
+                                <p >57</p>
+                            </div>
+                            <div id="id93" onclick="rellenar(id);bingo3();" class="col-1 borde py-1 px-4 blanco ">
+                                <p >63</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4 imagenfondo ">
+                                
+                            </div>
+                            <div class="col-1 borde py-1 px-4 imagenfondo">
+                               
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="i103" onclick="rellenar(id);bingo3();" class="col-1 borde py-1 px-4  ml-2 mb-2 blanco">
+                                <p >7</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4 mb-2 imagenfondo">
+                                
+                            </div>
+                            <div id="i113" onclick="rellenar(id);bingo3();" class="col-1 borde py-1 px-4 mb-2 blanco" >
+                                <p >28</p>
+                            </div>
+                            <div id="i123" onclick="rellenar(id);bingo3();" class="col-1 borde py-1 px-4 mb-2 blanco">
+                                <p >39</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4 mb-2 imagenfondo">
+                               
+                            </div>
+                            <div id="i133" onclick="rellenar(id);bingo3();" class="col-1 borde py-1 px-4 mb-2 blanco">
+                                <p >59</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4 mb-2 imagenfondo">
+                               
+                            </div>
+                            <div id="i143" onclick="rellenar(id);bingo3();" class="col-1 borde py-1 px-4 mb-2 blanco">
+                                <p >77</p>
+                            </div>
+                            <div id="i153" onclick="rellenar(id);bingo3();" class="col-1 borde py-1 px-4 mb-2 blanco">
+                                <p >81</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-5 plata mx-0 mx-lg-3">
+                        <div class="row">
+                            <div id="id14" onclick="rellenar(id);bingo4();" class="col-1 borde py-1 px-4 mt-2 ml-2 blanco text-center">
+                                <p >3</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4 mt-2 imagenfondo ">
+                                
+                            </div>
+                            <div class="col-1 borde py-1 px-4 mt-2 imagenfondo" >
+                                
+                            </div>
+                            <div class="col-1 borde py-1 px-4 mt-2 imagenfondo">
+                                
+                            </div>
+                            <div id="id24" onclick="rellenar(id);bingo4();" class="col-1 borde py-1 px-4 mt-2 blanco">
+                                <p >44</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4 mt-2 imagenfondo">
+                                
+                            </div>
+                            <div id="id34" onclick="rellenar(id);bingo4();" class="col-1 borde py-1 px-4 mt-2 blanco">
+                                <p >66</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4 mt-2 imagenfondo">
+                                
+                            </div>
+                            <div id="id44" onclick="rellenar(id);bingo4();" class="col-1 borde py-1 px-4 mt-2 blanco">
+                                <p >83</p>
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="col-1 borde py-1 px-4  ml-2 imagenfondo">
+                                
+                            </div>
+                            <div id="id54" onclick="rellenar(id);bingo4();" class="col-1 borde py-1 px-4 blanco">
+                                <p >11</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4 imagenfondo" >
+                               
+                            </div>
+                            <div id="id64" onclick="rellenar(id);bingo4();" class="col-1 borde py-1 px-4 blanco">
+                                <p >32</p>
+                            </div>
+                            <div id="id74" onclick="rellenar(id);bingo4();" class="col-1 borde py-1 px-4 blanco">
+                                <p >47</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4 imagenfondo">
+                                
+                            </div>
+                            <div id="id84" onclick="rellenar(id);bingo4();" class="col-1 borde py-1 px-4 blanco">
+                                <p >68</p>
+                            </div>
+                            <div id="id94" onclick="rellenar(id);bingo4();" class="col-1 borde py-1 px-4 blanco">
+                                <p >72</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4 imagenfondo">
+                               
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div  id="i104" onclick="rellenar(id);bingo4();" class="col-1 borde py-1 px-4  ml-2 mb-2 blanco">
+                                <p>9</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4 mb-2 imagenfondo">
+                                
+                            </div>
+                            <div id="i114" onclick="rellenar(id);bingo4();" class="col-1 borde py-1 px-4 mb-2 blanco" >
+                                <p >22</p>
+                            </div>
+                            <div id="i124" onclick="rellenar(id);bingo4();" class="col-1 borde py-1 px-4 mb-2 blanco">
+                                <p >35</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4 mb-2 imagenfondo">
+                                
+                            </div>
+                            <div id="i134" onclick="rellenar(id);bingo4();" class="col-1 borde py-1 px-4 mb-2 blanco">
+                                <p >57</p>
+                            </div>
+                            <div class="col-1 borde py-1 px-4 mb-2 imagenfondo">
+                                
+                            </div>
+                            <div id="i144" onclick="rellenar(id);bingo4();" class="col-1 borde py-1 px-4 mb-2 blanco">
+                                <p >79</p>
+                            </div>
+                            <div id="i154" onclick="rellenar(id);bingo4();" class="col-1 borde py-1 px-4 mb-2 blanco">
+                                <p >86</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+               
+
+               
+                    <div class="col-12 invisible">
+                        
+                        <span id="cont1">0</span>
+                        <span id="cont2">0</span>
+                        <span id="cont3">0</span>
+                        <span id="cont4">0</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+
+
+
+
+
+</html>
